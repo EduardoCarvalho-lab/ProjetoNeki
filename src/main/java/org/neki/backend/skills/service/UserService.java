@@ -5,10 +5,9 @@ package org.neki.backend.skills.service;
 
 	import org.springframework.beans.factory.annotation.Autowired;
 	import org.springframework.stereotype.Service;
-
-	import org.neki.backend.skills.domain.User;
-	import org.neki.backend.skills.DTO.UserDTO;
-	import org.neki.backend.skills.repository.UserRepository;
+import org.neki.backend.skills.DTO.UserDTO;
+import org.neki.backend.skills.entity.User;
+import org.neki.backend.skills.repository.UserRepository;
 
 	@Service
 	public class UserService {

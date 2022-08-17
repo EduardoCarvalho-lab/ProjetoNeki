@@ -1,4 +1,4 @@
-package org.neki.backend.skills.domain;
+package org.neki.backend.skills.entity;
 
 import java.time.LocalDate;
 

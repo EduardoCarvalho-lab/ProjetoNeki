@@ -5,10 +5,9 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import org.neki.backend.skills.domain.Skill;
 import org.neki.backend.skills.repository.SkillRepository;
 import org.neki.backend.skills.DTO.SkillDTO;
+import org.neki.backend.skills.entity.Skill;
 
 	@Service
 	public class SkillService {

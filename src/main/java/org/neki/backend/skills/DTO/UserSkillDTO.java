@@ -2,8 +2,8 @@ package org.neki.backend.skills.DTO;
 
 import java.time.LocalDate;
 
-import org.neki.backend.skills.domain.User;
-import org.neki.backend.skills.domain.Skill;
+import org.neki.backend.skills.entity.Skill;
+import org.neki.backend.skills.entity.User;
 
 	public class UserSkillDTO {
 		

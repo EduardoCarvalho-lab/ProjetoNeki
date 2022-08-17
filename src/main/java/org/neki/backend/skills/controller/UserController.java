@@ -15,10 +15,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus; 
 import org.springframework.web.bind.annotation.RestController;
-
-import org.neki.backend.skills.domain.*;
 import org.neki.backend.skills.repository.*;
-import org.neki.backend.skills.DTO.UserDTO; 
+import org.neki.backend.skills.DTO.UserDTO;
+import org.neki.backend.skills.entity.*;
 import org.neki.backend.skills.service.UserService; 
 import io.swagger.annotations.ApiOperation; 
 import io.swagger.annotations.ApiResponse;
