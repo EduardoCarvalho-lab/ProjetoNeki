@@ -16,13 +16,13 @@ public class Skill {
 		@Column(name="id")
 		private Integer id;
 		
-		@Column(name="name", nullable = false )
+		@Column(name="name", nullable = true )
 		private String name;
 		
 		@Column(name="version", nullable = true)
 		private String version;
 		
-		@Column(name="description", nullable = false)
+		@Column(name="description", nullable = true)
 		private String description;
 		
 		@Column(name="image_url", nullable= true)

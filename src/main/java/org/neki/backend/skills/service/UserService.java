@@ -26,7 +26,7 @@ import org.neki.backend.skills.repository.UserRepository;
 			user.setPassword(dto.getPassword());
 			user.setLastLoginDate(dto.getLastLoginDate());
 			return userRepository.save(user);
-		}
+		} 
 		
 		public User findById(Integer id) {
 			Optional<User> entity = userRepository.findById(id);

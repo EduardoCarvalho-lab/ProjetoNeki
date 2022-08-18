@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+//import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -95,8 +96,12 @@ return ResponseEntity.ok(user.get()); }
 @ApiResponse(code = 505, message = "Ocorreu uma exceção") })
 
 @ResponseStatus(HttpStatus.CREATED) public User
-cadastrarUsuario(@RequestBody UserDTO dto) { return
-userService.save(dto); }
+cadastrarUsuario(@RequestBody UserDTO dto) {
+//	BCryptPasswordEncoder crypt = new BCryptPasswordEncoder();
+//	String encryptedKey = crypt.encode(dto.getPassword());
+//	dto.setPassword(encryptedKey);
+	return userService.save(dto);
+}
 
 @PutMapping("/atualizarUsuario/{id}")
 
