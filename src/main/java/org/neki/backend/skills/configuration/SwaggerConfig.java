@@ -24,7 +24,7 @@ public class SwaggerConfig{
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("br.com.neki.projeto"))
+                .apis(RequestHandlerSelectors.basePackage("org.neki.backend.skills.controller"))
                 //.paths(regex("/Pedido.*"))
                 .paths(PathSelectors.ant("/api/**"))
                 .build()
