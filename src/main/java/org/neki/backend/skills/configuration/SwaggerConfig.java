@@ -25,7 +25,6 @@ public class SwaggerConfig{
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("org.neki.backend.skills.controller"))
-                //.paths(regex("/Pedido.*"))
                 .paths(PathSelectors.ant("/api/**"))
                 .build()
                 .apiInfo(metaInfo());
@@ -35,8 +34,8 @@ public class SwaggerConfig{
 
         @SuppressWarnings("rawtypes")
         ApiInfo apiInfo = new ApiInfo(
-                "Skills API REST",
-                "API REST para Neki",
+                "API REST - Skills",
+                "API REST de avaliação técnica - Neki",
                 "1.0",
                 "Terms of Service",
                 new Contact("Eduardo","eduardocclaw@gmail.com", "https://github.com/EduardoCarvalho-lab"),
